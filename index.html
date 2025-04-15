@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green IT - Trouvez votre véhicule écologique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Include Hero Section -->
+    <div id="hero"></div>
+
+    <!-- Include Quiz Section -->
+    <div id="quiz"></div>
+
+    <!-- Include Results Section -->
+    <div id="results"></div>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script src="scripts/quiz.js"></script>
+    <script>
+        // Dynamically load components
+        async function loadComponent(id, file) {
+            const response = await fetch(file);
+            const content = await response.text();
+            document.getElementById(id).innerHTML = content;
+        }
+
+        loadComponent('header', 'components/header.html');
+        loadComponent('hero', 'components/hero.html');
+        loadComponent('quiz', 'components/quiz.html');
+        loadComponent('results', 'components/results.html');
+        loadComponent('footer', 'components/footer.html');
+    </script>
+</body>
+</html>

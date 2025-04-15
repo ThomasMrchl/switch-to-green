@@ -1,0 +1,27 @@
+<div id="quizContainer" class="hidden container mx-auto px-4 py-12 max-w-4xl">
+    <!-- Progress Bar -->
+    <div class="mb-8">
+        <div class="flex justify-between mb-2">
+            <span id="currentQuestionNumber" class="font-medium">Question 1/8</span>
+            <span id="progressPercentage" class="font-medium">0%</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5">
+            <div id="progressBar" class="progress-bar bg-green-600 h-2.5 rounded-full" style="width: 0%"></div>
+        </div>
+    </div>
+
+    <!-- Questions Container -->
+    <div id="questionsContainer" class="relative min-h-96 overflow-hidden">
+        <!-- Include your questions here -->
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="flex justify-between mt-8">
+        <button id="prevBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-6 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+            <i class="fas fa-arrow-left mr-2"></i> Précédent
+        </button>
+        <button id="nextBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition">
+            Suivant <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+    </div>
+</div>
