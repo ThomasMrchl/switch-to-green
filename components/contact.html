@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Green IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+        <h1 class="text-3xl font-bold text-center mb-2">Meet the creators of Switch2Green</h1>
+        <p class="text-center text-gray-600 mb-8">
+            This project is carried out as part of a student project and is not associated with any car constructor or company.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../images/creator1.jpg" alt="Créateur 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Jean Dupont</h2>
+                    <p class="text-gray-600">Développeur Front-End passionné par les solutions écologiques et les interfaces utilisateur modernes.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../images/creator2.jpg" alt="Créateur 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Marie Curie</h2>
+                    <p class="text-gray-600">Designer UX/UI spécialisée dans la création d'expériences utilisateur intuitives et esthétiques.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="../images/creator3.jpg" alt="Créateur 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Paul Martin</h2>
+                    <p class="text-gray-600">Développeur Back-End expert en solutions durables et en optimisation des performances.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <script type="module">
+        import { loadComponent } from '../js/loadComponent.js';
+
+        loadComponent('header', '../components/header.html');
+        loadComponent('footer', '../components/footer.html');
+    </script>
+</body>
+</html>

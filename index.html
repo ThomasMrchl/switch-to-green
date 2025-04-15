@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green IT - Trouvez votre véhicule écologique</title>
+    <title>Switch2Green - Find your eco-friendly vehicle</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -24,14 +24,9 @@
     <!-- Include Footer -->
     <div id="footer"></div>
 
-    <script src="scripts/quiz.js"></script>
-    <script>
-        // Dynamically load components
-        async function loadComponent(id, file) {
-            const response = await fetch(file);
-            const content = await response.text();
-            document.getElementById(id).innerHTML = content;
-        }
+    <script src="js/quizz.js"></script>
+    <script type="module">
+        import { loadComponent } from './js/loadComponent.js';
 
         loadComponent('header', 'components/header.html');
         loadComponent('hero', 'components/hero.html');
